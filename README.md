@@ -3,7 +3,7 @@ YouTube Video Listing using API
 
 
 
-A simple and lightweight web application that fetches and displays a list of YouTube videos from a specific channel or search query using the YouTube Data API v3. Ideal for developers who want to integrate YouTube content into their own websites or dashboards.
+A simple and lightweight web application that fetches and displays a list of YouTube videos from a specific channel or search query using only javScript code. Ideal for developers who want to integrate YouTube content into their own websites or dashboards.
 
 -> Features :
 
