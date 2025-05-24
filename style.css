@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 97vw;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading {
+  color: #4c4c4c;
+  text-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+img {
+  height: 160px;
+  width: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input {
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-top: 1px solid #4c4c4c;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+header button {
+  padding: 7px;
+  border: none;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #4c4c4c;
+}
+
+#cardContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.card {
+  padding: 20px;
+  background-color: #fff;
+  width: 85%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.5);
+  margin: 10px 40px 10px;
+}
+
+.title {
+  margin: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.channelHost {
+  margin: 15px;
+}
+
+.linkBtn{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.linkBtn:hover{
+    background-color: #838383;
+    color: #eee;
+}
+
+.hidden {
+  display: none;
+}
+
+.errorMessage{
+  width: 100vw;
+  color: #4c4c4c;
+  text-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
+  text-align: center;
+}
+
+@media (min-width: 370px) {
+  header h1{
+    font-size: 17px;
+    justify-content: space-between;
+  }
+
+  input{
+    /* height: 20px; */
+    width: 50px;
+  }
+
+  #cardContainer{
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 330px) {
+  header h1{
+    font-size: 17px;
+    justify-content: space-between;
+  }
+
+  input{
+    /* height: 20px; */
+    width: 150px;
+  }
+
+  #cardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 450px) {
+  header h1{
+    font-size: 20px;
+    justify-content: space-between;
+  }
+  
+  #searchInput{
+    width: 200px;
+  }
+
+  #searchBtn{
+    font-size: 15px;
+  }
+
+  #cardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 640px) {
+  header h1{
+    font-size: 30px;
+  }
+
+  #searchBtn{
+    font-size: 15px;
+  }
+
+  #searchInput{
+    width: 300px;
+  }
+
+  #cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  #searchBtn{
+    font-size: 20px;
+  }
+
+  #searchInput{
+    width: 400px;
+  }
+
+  #cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  header h1{
+    font-size: 35px;
+  }
+
+  #searchInput{
+    width: 500px;
+  }
+
+  #searchBtn{
+    font-size: 22px;
+  }
+
+  #cardContainer {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1536px) {
+  header h1{
+    font-size: 50px;
+  }
+
+  #searchBtn{
+    font-size: 27px;
+  }
+
+  #cardContainer {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
