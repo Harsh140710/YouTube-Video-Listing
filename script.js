@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // add all the data into a array
       videoData.forEach((data) => {
         let title = data.items.snippet.title;
-        if (title.length > 10) title = `${title.substring(0, 20)}...`;
+        if (title.length > 10) title = `${title.substring(0, 15)}...`;
 
         // please title keep let beacase of this is change on the condition 
         // it is not working with const
